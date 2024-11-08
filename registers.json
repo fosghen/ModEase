@@ -1,0 +1,1776 @@
+{
+    "Основные": {
+        "0": {
+            "meaning": "gName",
+            "units": "",
+            "address": 0,
+            "multy": 1,
+            "digits": 0,
+            "description": "Название устройства",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": "gName",
+            "units": "",
+            "address": 1,
+            "multy": 1,
+            "digits": 0,
+            "description": "gName",
+            "access": 0,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": "gName",
+            "units": "",
+            "address": 2,
+            "multy": 1,
+            "digits": 0,
+            "description": "gName",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": "gName",
+            "units": "",
+            "address": 3,
+            "multy": 1,
+            "digits": 0,
+            "description": "gName",
+            "access": 0,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": "gName",
+            "units": "",
+            "address": 4,
+            "multy": 1,
+            "digits": 0,
+            "description": "gName",
+            "access": 0,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": "gName",
+            "units": "",
+            "address": 5,
+            "multy": 1,
+            "digits": 0,
+            "description": "gName",
+            "access": 0,
+            "dtype": 0
+        },
+        "6": {
+            "meaning": "gName",
+            "units": "",
+            "address": 6,
+            "multy": 1,
+            "digits": 0,
+            "description": "gName",
+            "access": 0,
+            "dtype": 0
+        },
+        "7": {
+            "meaning": "gName",
+            "units": "",
+            "address": 7,
+            "multy": 1,
+            "digits": 0,
+            "description": "gName",
+            "access": 0,
+            "dtype": 0
+        },
+        "8": {
+            "meaning": "gVersion",
+            "units": "",
+            "address": 8,
+            "multy": 1,
+            "digits": 0,
+            "description": "Версия устройства",
+            "access": 0,
+            "dtype": 0
+        },
+        "9": {
+            "meaning": "gMode",
+            "units": "",
+            "address": 9,
+            "multy": 1,
+            "digits": 0,
+            "description": "Режим работы устройства",
+            "access": 0,
+            "dtype": 0
+        },
+        "10": {
+            "meaning": "gPassword",
+            "units": "",
+            "address": 10,
+            "multy": 1,
+            "digits": 0,
+            "description": "Ввода пароля устройства",
+            "access": 1,
+            "dtype": 0
+        },
+        "11": {
+            "meaning": "gFunction",
+            "units": "",
+            "address": 11,
+            "multy": 1,
+            "digits": 0,
+            "description": "Функциональные действия",
+            "access": 2,
+            "dtype": 0
+        },
+        "12": {
+            "meaning": "gWork",
+            "units": "Минута",
+            "address": 12,
+            "multy": 1,
+            "digits": 0,
+            "description": "Текущее время непрерывной работы устройства",
+            "access": 0,
+            "dtype": 0
+        }
+    },
+    "ИИ": {
+        "0": {
+            "meaning": "iiStatus",
+            "units": "",
+            "address": 100,
+            "multy": 1,
+            "digits": 0,
+            "description": "Статусы работы",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": "iiEnable",
+            "units": "",
+            "address": 101,
+            "multy": 1,
+            "digits": 0,
+            "description": "Включить/выключить ИИ",
+            "access": 2,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": "iiCurrent",
+            "units": "A",
+            "address": 102,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(ИИ) Текущий ток",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": "iiIntencity",
+            "units": "Вт",
+            "address": 103,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ИИ) Текущая интенсивность фотодиода",
+            "access": 0,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": "iiPowerMode",
+            "units": "Вт",
+            "address": 104,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ИИ) Режим уставки мощности",
+            "access": 2,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": "iiSetCurrent",
+            "units": "А",
+            "address": 105,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(ИИ) Уставка тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "6": {
+            "meaning": "iiSetPower",
+            "units": "Вт",
+            "address": 106,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ИИ) Уставка мощности",
+            "access": 2,
+            "dtype": 0
+        },
+        "7": {
+            "meaning": "iiMinCurrent",
+            "units": "А",
+            "address": 107,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(ИИ) Мин. Уставка тока ",
+            "access": 2,
+            "dtype": 0
+        },
+        "8": {
+            "meaning": "iiMaxCurrent",
+            "units": "А",
+            "address": 108,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(ИИ) Макс. Уставка тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "9": {
+            "meaning": "iiMinPower",
+            "units": "Вт",
+            "address": 109,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ИИ) Мин. Уставка мощности",
+            "access": 2,
+            "dtype": 0
+        },
+        "10": {
+            "meaning": "iiMaxPower",
+            "units": "Вт",
+            "address": 110,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ИИ) Макс. Уставка мощности",
+            "access": 2,
+            "dtype": 0
+        },
+        "11": {
+            "meaning": "iiMinAlCur",
+            "units": "А",
+            "address": 111,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(ИИ) Мин. Тревога Тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "12": {
+            "meaning": "iiMaxAlCur",
+            "units": "А",
+            "address": 112,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(ИИ) Макс. Тревога Тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "13": {
+            "meaning": "iiMaxAlInt",
+            "units": "Вт",
+            "address": 113,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ИИ) Мин. Тревога Интенсивн. Фотодиода",
+            "access": 2,
+            "dtype": 0
+        },
+        "14": {
+            "meaning": "iiMinAlInt",
+            "units": "Вт",
+            "address": 114,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ИИ) Макс. Тревога Интенсивн. Фотодиода",
+            "access": 2,
+            "dtype": 0
+        },
+        "15": {
+            "meaning": "iiMinSecCur",
+            "units": "А",
+            "address": 115,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(ИИ) Мин. Защита тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "16": {
+            "meaning": "iiMaxSecCur",
+            "units": "А",
+            "address": 116,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(ИИ) Макс. Защита тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "17": {
+            "meaning": "iiMinSecInt",
+            "units": "Вт",
+            "address": 117,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ИИ) Мин. Защита интенсивности фотодиода",
+            "access": 2,
+            "dtype": 0
+        },
+        "18": {
+            "meaning": "iiMaxSecInt",
+            "units": "Вт",
+            "address": 118,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ИИ) Макс. Защита интенсивности фотодиода",
+            "access": 2,
+            "dtype": 0
+        },
+        "19": {
+            "meaning": "iiPTemp",
+            "units": "Градус",
+            "address": 119,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Текущая температура",
+            "access": 0,
+            "dtype": 1
+        },
+        "20": {
+            "meaning": "iiPCurrent",
+            "units": "А",
+            "address": 120,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Текущий ток",
+            "access": 0,
+            "dtype": 0
+        },
+        "21": {
+            "meaning": "iiPEnable",
+            "units": "",
+            "address": 121,
+            "multy": 1,
+            "digits": 0,
+            "description": "(Пельтье) Включить/выключить ТЕК",
+            "access": 2,
+            "dtype": 0
+        },
+        "22": {
+            "meaning": "iiPSetTemp",
+            "units": "Градус",
+            "address": 122,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Уставка температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "23": {
+            "meaning": "iiPMinSetTemp",
+            "units": "Градус",
+            "address": 123,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Мин. Уставка температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "24": {
+            "meaning": "iiPMaxSetTemp",
+            "units": "Градус",
+            "address": 124,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Макс. Уставка температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "25": {
+            "meaning": "iiPMinAlTemp",
+            "units": "Градус",
+            "address": 125,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Мин. Тревога температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "26": {
+            "meaning": "iiPMaxAlTemp",
+            "units": "Градус",
+            "address": 126,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Макс. Тревога температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "27": {
+            "meaning": "iiPMinAlCur",
+            "units": "А",
+            "address": 127,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Мин. Тревога тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "28": {
+            "meaning": "iiPMaxAlCur",
+            "units": "А",
+            "address": 128,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Макс. Тревога тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "29": {
+            "meaning": "iiPMinSecTemp",
+            "units": "Градус",
+            "address": 129,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Мин. Защита по температуре ",
+            "access": 2,
+            "dtype": 1
+        },
+        "30": {
+            "meaning": "iiPMaxSecTemp",
+            "units": "Градус",
+            "address": 130,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Макс. Защита по температуре",
+            "access": 2,
+            "dtype": 1
+        },
+        "31": {
+            "meaning": "iiPMinSecCur",
+            "units": "А",
+            "address": 131,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Мин. Защита по току",
+            "access": 2,
+            "dtype": 0
+        },
+        "32": {
+            "meaning": "iiPMaxSecCur",
+            "units": "А",
+            "address": 132,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Макс. Защита по току",
+            "access": 2,
+            "dtype": 0
+        }
+    },
+    "УПО": {
+        "0": {
+            "meaning": "upoStatus",
+            "units": "",
+            "address": 200,
+            "multy": 1,
+            "digits": 0,
+            "description": "Статусы работы",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": "upoEnable",
+            "units": "",
+            "address": 201,
+            "multy": 1,
+            "digits": 0,
+            "description": "Включить/выключить УПО",
+            "access": 2,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": "upoCurrent",
+            "units": "А",
+            "address": 202,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(УПО) Текущий ток ",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": "upoPower",
+            "units": "Вт",
+            "address": 203,
+            "multy": 1,
+            "digits": 0,
+            "description": "(УПО) Текущий уровня мощности ",
+            "access": 2,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": "upoSetCur",
+            "units": "А",
+            "address": 204,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(УПО) Уставка тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": "upoMinCur",
+            "units": "А",
+            "address": 205,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(УПО) Мин. Уставка тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "6": {
+            "meaning": "upoMaxCur",
+            "units": "А",
+            "address": 206,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(УПО) Макс. Уставка тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "7": {
+            "meaning": "upoMinAlCur",
+            "units": "А",
+            "address": 207,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(УПО) Мин. Тревога тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "8": {
+            "meaning": "upoMaxAlCur",
+            "units": "А",
+            "address": 208,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(УПО) Макс. Тревога тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "9": {
+            "meaning": "upoMinSecCur",
+            "units": "А",
+            "address": 209,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(УПО) Мин. Защита по току",
+            "access": 2,
+            "dtype": 0
+        },
+        "10": {
+            "meaning": "upoMaxSecCur",
+            "units": "А",
+            "address": 210,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(УПО) Макс. Защита по току",
+            "access": 2,
+            "dtype": 0
+        },
+        "11": {
+            "meaning": "upoPTemp",
+            "units": "Градусы",
+            "address": 211,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Текущая температура",
+            "access": 0,
+            "dtype": 1
+        },
+        "12": {
+            "meaning": "upoPCurrent",
+            "units": "А",
+            "address": 212,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Текущий ток",
+            "access": 0,
+            "dtype": 0
+        },
+        "13": {
+            "meaning": "upoPEnable",
+            "units": "",
+            "address": 213,
+            "multy": 1,
+            "digits": 0,
+            "description": "(Пельтье) Включить/выключить ТЕК",
+            "access": 2,
+            "dtype": 0
+        },
+        "14": {
+            "meaning": "upoPSetTemp",
+            "units": "Градусы",
+            "address": 214,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Уставка температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "15": {
+            "meaning": "upoPMinSetTemp",
+            "units": "Градусы",
+            "address": 215,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Мин. Уставка температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "16": {
+            "meaning": "upoPMaxSetTemp",
+            "units": "Градусы",
+            "address": 216,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Макс. Уставка температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "17": {
+            "meaning": "upoPMinAlTemp",
+            "units": "Градусы",
+            "address": 217,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Мин. Тревога температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "18": {
+            "meaning": "upoPMaxAlTemp",
+            "units": "Градусы",
+            "address": 218,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Макс. Тревога температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "19": {
+            "meaning": "upoPMinAlCur",
+            "units": "А",
+            "address": 219,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Мин. Тревога тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "20": {
+            "meaning": "upoPMaxAlCur",
+            "units": "А",
+            "address": 220,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Макс. Тревога тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "21": {
+            "meaning": "upoPMinSecTemp",
+            "units": "Градусы",
+            "address": 221,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Мин. Защита по температуре ",
+            "access": 2,
+            "dtype": 1
+        },
+        "22": {
+            "meaning": "upoPMaxSecTemp",
+            "units": "Градусы",
+            "address": 222,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Макс. Защита по температуре",
+            "access": 2,
+            "dtype": 1
+        },
+        "23": {
+            "meaning": "upoPMinSecCur",
+            "units": "А",
+            "address": 223,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Мин. Защита по току",
+            "access": 2,
+            "dtype": 0
+        },
+        "24": {
+            "meaning": "upoPMaxSecCur",
+            "units": "А",
+            "address": 224,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Макс. Защита по току",
+            "access": 2,
+            "dtype": 0
+        }
+    },
+    "ВБР": {
+        "0": {
+            "meaning": "vbrEnable",
+            "units": "",
+            "address": 300,
+            "multy": 1,
+            "digits": 0,
+            "description": "Статусы работы",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": "vbrPTemp",
+            "units": "Градусы",
+            "address": 301,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Текущая температура",
+            "access": 0,
+            "dtype": 1
+        },
+        "2": {
+            "meaning": "vbrPCurrent",
+            "units": "А",
+            "address": 302,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Текущий ток",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": "vbrPEnable",
+            "units": "",
+            "address": 303,
+            "multy": 1,
+            "digits": 0,
+            "description": "(Пельтье) Включить/выключить ТЕК",
+            "access": 2,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": "vbrPSetTemp",
+            "units": "Градусы",
+            "address": 304,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Уставка температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "5": {
+            "meaning": "vbrPMinSetTemp",
+            "units": "Градусы",
+            "address": 305,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Мин. Уставка температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "6": {
+            "meaning": "vbrPMaxSetTemp",
+            "units": "Градусы",
+            "address": 306,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Макс. Уставка температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "7": {
+            "meaning": "vbrPMinAlTemp",
+            "units": "Градусы",
+            "address": 307,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Мин. Тревога температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "8": {
+            "meaning": "vbrPMaxAlTemp",
+            "units": "Градусы",
+            "address": 308,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Макс. Тревога температуры",
+            "access": 2,
+            "dtype": 1
+        },
+        "9": {
+            "meaning": "vbrPMinAlCur",
+            "units": "А",
+            "address": 309,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Мин. Тревога тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "10": {
+            "meaning": "vbrPMaxAlCur",
+            "units": "А",
+            "address": 310,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Макс. Тревога тока",
+            "access": 2,
+            "dtype": 0
+        },
+        "11": {
+            "meaning": "vbrPMinSecTemp",
+            "units": "Градусы",
+            "address": 311,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Мин. Защита по температуре ",
+            "access": 2,
+            "dtype": 1
+        },
+        "12": {
+            "meaning": "vbrPMaxSecTemp",
+            "units": "Градусы",
+            "address": 312,
+            "multy": 0.01,
+            "digits": 2,
+            "description": "(Пельтье) Макс. Защита по температуре",
+            "access": 2,
+            "dtype": 1
+        },
+        "13": {
+            "meaning": "vbrPMinSecCur",
+            "units": "А",
+            "address": 313,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Мин. Защита по току",
+            "access": 2,
+            "dtype": 0
+        },
+        "14": {
+            "meaning": "vbrPMaxSecCur",
+            "units": "А",
+            "address": 314,
+            "multy": 0.001,
+            "digits": 3,
+            "description": "(Пельтье) Макс. Защита по току",
+            "access": 2,
+            "dtype": 0
+        }
+    },
+    "ФД": {
+        "0": {
+            "meaning": " ",
+            "units": "",
+            "address": 400,
+            "multy": 1,
+            "digits": 0,
+            "description": "Значение контрольной точки 0",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": " ",
+            "units": "",
+            "address": 401,
+            "multy": 1,
+            "digits": 0,
+            "description": "Значение контрольной точки 1",
+            "access": 0,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": " ",
+            "units": "",
+            "address": 402,
+            "multy": 1,
+            "digits": 0,
+            "description": "Значение контрольной точки 2",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": " ",
+            "units": "",
+            "address": 403,
+            "multy": 1,
+            "digits": 0,
+            "description": "Значение контрольной точки 3",
+            "access": 0,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": " ",
+            "units": "",
+            "address": 404,
+            "multy": 1,
+            "digits": 0,
+            "description": "Значение контрольной точки 4",
+            "access": 0,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": " ",
+            "units": "",
+            "address": 405,
+            "multy": 1,
+            "digits": 0,
+            "description": "Значение контрольной точки 5",
+            "access": 0,
+            "dtype": 0
+        },
+        "6": {
+            "meaning": " ",
+            "units": "",
+            "address": 406,
+            "multy": 1,
+            "digits": 0,
+            "description": "Значение контрольной точки 6",
+            "access": 0,
+            "dtype": 0
+        },
+        "7": {
+            "meaning": " ",
+            "units": "",
+            "address": 407,
+            "multy": 1,
+            "digits": 0,
+            "description": "Усиление аттенюатора 0",
+            "access": 2,
+            "dtype": 0
+        },
+        "8": {
+            "meaning": " ",
+            "units": "",
+            "address": 408,
+            "multy": 1,
+            "digits": 0,
+            "description": "Усиление аттенюатора 1",
+            "access": 2,
+            "dtype": 0
+        },
+        "9": {
+            "meaning": " ",
+            "units": "",
+            "address": 409,
+            "multy": 1,
+            "digits": 0,
+            "description": "Усиление аттенюатора 2",
+            "access": 2,
+            "dtype": 0
+        },
+        "10": {
+            "meaning": " ",
+            "units": "",
+            "address": 410,
+            "multy": 1,
+            "digits": 0,
+            "description": "Усиление аттенюатора 3",
+            "access": 2,
+            "dtype": 0
+        },
+        "11": {
+            "meaning": " ",
+            "units": "",
+            "address": 411,
+            "multy": 1,
+            "digits": 0,
+            "description": "Усиление аттенюатора 4",
+            "access": 2,
+            "dtype": 0
+        },
+        "12": {
+            "meaning": " ",
+            "units": "",
+            "address": 412,
+            "multy": 1,
+            "digits": 0,
+            "description": "Усиление аттенюатора 5",
+            "access": 2,
+            "dtype": 0
+        },
+        "13": {
+            "meaning": " ",
+            "units": "",
+            "address": 413,
+            "multy": 1,
+            "digits": 0,
+            "description": "Усиление аттенюатора 6",
+            "access": 2,
+            "dtype": 0
+        }
+    },
+    "ЭОМ": {
+        "0": {
+            "meaning": "eomStatus",
+            "units": "",
+            "address": 500,
+            "multy": 1,
+            "digits": 0,
+            "description": "Статусы работы",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": "eomEnable",
+            "units": "",
+            "address": 501,
+            "multy": 1,
+            "digits": 0,
+            "description": "Включить/выключить ЭОМ",
+            "access": 2,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": "eomVoltOffset",
+            "units": "В",
+            "address": 502,
+            "multy": 1,
+            "digits": 0,
+            "description": "Контроль напряжения смещения",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": "eomOutPow",
+            "units": "Вт",
+            "address": 503,
+            "multy": 1,
+            "digits": 0,
+            "description": "Мощность на выходе ЭОМ",
+            "access": 0,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": "eomSetPow",
+            "units": "",
+            "address": 504,
+            "multy": 1,
+            "digits": 0,
+            "description": "Режим уставки мощности",
+            "access": 2,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": "eomSetVoltOS",
+            "units": "В",
+            "address": 505,
+            "multy": 1,
+            "digits": 0,
+            "description": "Уставка напряжения смещения",
+            "access": 2,
+            "dtype": 0
+        },
+        "6": {
+            "meaning": "eomSetAuPow",
+            "units": "Вт",
+            "address": 506,
+            "multy": 1,
+            "digits": 0,
+            "description": "Уставка уровня автоматич. мощности",
+            "access": 2,
+            "dtype": 0
+        }
+    },
+    "Свич 2х8": {
+        "0": {
+            "meaning": "sw1StatusSw1",
+            "units": "",
+            "address": 600,
+            "multy": 1,
+            "digits": 0,
+            "description": "(С1) Статус свича 1",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": "sw1StatusSw2",
+            "units": "",
+            "address": 601,
+            "multy": 1,
+            "digits": 0,
+            "description": "(С1) Статус свича 2",
+            "access": 0,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": "sw1SetSw1",
+            "units": "",
+            "address": 602,
+            "multy": 1,
+            "digits": 0,
+            "description": "(С1) Установка свича 1",
+            "access": 2,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": "sw1SetSw2",
+            "units": "",
+            "address": 603,
+            "multy": 1,
+            "digits": 0,
+            "description": "(С1) Установка свича 2",
+            "access": 2,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": "sw2StatusSw1",
+            "units": "",
+            "address": 604,
+            "multy": 1,
+            "digits": 0,
+            "description": "(С2) Статус свича 1",
+            "access": 0,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": "sw2StatusSw2",
+            "units": "",
+            "address": 605,
+            "multy": 1,
+            "digits": 0,
+            "description": "(С2) Статус свича 2",
+            "access": 0,
+            "dtype": 0
+        },
+        "6": {
+            "meaning": "sw2SetSw1",
+            "units": "",
+            "address": 606,
+            "multy": 1,
+            "digits": 0,
+            "description": "(С2) Установка свича 1",
+            "access": 2,
+            "dtype": 0
+        },
+        "7": {
+            "meaning": "sw2SetSw2",
+            "units": "",
+            "address": 607,
+            "multy": 1,
+            "digits": 0,
+            "description": "(С2) Установка свича 2",
+            "access": 2,
+            "dtype": 0
+        }
+    },
+    "Рамановские ИИ": {
+        "0": {
+            "meaning": " ",
+            "units": "",
+            "address": 700,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ1) Необходимый снимаемый параметр1",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": " ",
+            "units": "",
+            "address": 701,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ1) Необходимый снимаемый параметр2",
+            "access": 0,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": " ",
+            "units": "",
+            "address": 702,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ1) Необходимый снимаемый параметр3",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": " ",
+            "units": "",
+            "address": 703,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ1) Необходимый управляемый параметр1",
+            "access": 2,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": " ",
+            "units": "",
+            "address": 704,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ1) Необходимый управляемый параметр2",
+            "access": 2,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": " ",
+            "units": "",
+            "address": 705,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ1) Необходимый управляемый параметр3",
+            "access": 2,
+            "dtype": 0
+        },
+        "6": {
+            "meaning": " ",
+            "units": "",
+            "address": 706,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ2) Необходимый снимаемый параметр1",
+            "access": 0,
+            "dtype": 0
+        },
+        "7": {
+            "meaning": " ",
+            "units": "",
+            "address": 707,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ2) Необходимый снимаемый параметр2",
+            "access": 0,
+            "dtype": 0
+        },
+        "8": {
+            "meaning": " ",
+            "units": "",
+            "address": 708,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ2) Необходимый снимаемый параметр3",
+            "access": 0,
+            "dtype": 0
+        },
+        "9": {
+            "meaning": " ",
+            "units": "",
+            "address": 709,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ2) Необходимый управляемый параметр1",
+            "access": 2,
+            "dtype": 0
+        },
+        "10": {
+            "meaning": " ",
+            "units": "",
+            "address": 710,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ2) Необходимый управляемый параметр2",
+            "access": 2,
+            "dtype": 0
+        },
+        "11": {
+            "meaning": " ",
+            "units": "",
+            "address": 711,
+            "multy": 1,
+            "digits": 0,
+            "description": "(РИИ2) Необходимый управляемый параметр3",
+            "access": 2,
+            "dtype": 0
+        }
+    },
+    "Эрбиевые усилители": {
+        "0": {
+            "meaning": "ea1Status",
+            "units": "",
+            "address": 800,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ1) Состояние устройства",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": " ",
+            "units": "",
+            "address": 801,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ1) Необходимый снимаемый параметр1",
+            "access": 0,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": " ",
+            "units": "",
+            "address": 802,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ1) Необходимый снимаемый параметр2",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": " ",
+            "units": "",
+            "address": 803,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ1) Необходимый снимаемый параметр3",
+            "access": 0,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": " ",
+            "units": "",
+            "address": 804,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ1) Необходимый управляемый параметр1",
+            "access": 2,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": " ",
+            "units": "",
+            "address": 805,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ1) Необходимый управляемый параметр2",
+            "access": 2,
+            "dtype": 0
+        },
+        "6": {
+            "meaning": " ",
+            "units": "",
+            "address": 806,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ1) Необходимый управляемый параметр3",
+            "access": 2,
+            "dtype": 0
+        },
+        "7": {
+            "meaning": "ea2Status",
+            "units": "",
+            "address": 807,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ2) Состояние устройства",
+            "access": 0,
+            "dtype": 0
+        },
+        "8": {
+            "meaning": " ",
+            "units": "",
+            "address": 808,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ2) Необходимый снимаемый параметр1",
+            "access": 0,
+            "dtype": 0
+        },
+        "9": {
+            "meaning": " ",
+            "units": "",
+            "address": 809,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ2) Необходимый снимаемый параметр2",
+            "access": 0,
+            "dtype": 0
+        },
+        "10": {
+            "meaning": " ",
+            "units": "",
+            "address": 810,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ2) Необходимый снимаемый параметр3",
+            "access": 0,
+            "dtype": 0
+        },
+        "11": {
+            "meaning": " ",
+            "units": "",
+            "address": 811,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ2) Необходимый управляемый параметр1",
+            "access": 2,
+            "dtype": 0
+        },
+        "12": {
+            "meaning": " ",
+            "units": "",
+            "address": 812,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ2) Необходимый управляемый параметр2",
+            "access": 2,
+            "dtype": 0
+        },
+        "13": {
+            "meaning": " ",
+            "units": "",
+            "address": 813,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ЭУ2) Необходимый управляемый параметр3",
+            "access": 2,
+            "dtype": 0
+        }
+    },
+    "Двухканальные свичи": {
+        "0": {
+            "meaning": "ds1Status",
+            "units": "",
+            "address": 900,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС1) Состояние устройства",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": " ",
+            "units": "",
+            "address": 901,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС1) Необходимый снимаемый параметр1",
+            "access": 0,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": " ",
+            "units": "",
+            "address": 902,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС1) Необходимый снимаемый параметр2",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": " ",
+            "units": "",
+            "address": 903,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС1) Необходимый снимаемый параметр3",
+            "access": 0,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": " ",
+            "units": "",
+            "address": 904,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС1) Необходимый управляемый параметр1",
+            "access": 2,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": " ",
+            "units": "",
+            "address": 905,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС1) Необходимый управляемый параметр2",
+            "access": 2,
+            "dtype": 0
+        },
+        "6": {
+            "meaning": " ",
+            "units": "",
+            "address": 906,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС1) Необходимый управляемый параметр3",
+            "access": 2,
+            "dtype": 0
+        },
+        "7": {
+            "meaning": "ds2Status",
+            "units": "",
+            "address": 907,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС2) Состояние устройства",
+            "access": 0,
+            "dtype": 0
+        },
+        "8": {
+            "meaning": " ",
+            "units": "",
+            "address": 908,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС2) Необходимый снимаемый параметр1",
+            "access": 0,
+            "dtype": 0
+        },
+        "9": {
+            "meaning": " ",
+            "units": "",
+            "address": 909,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС2) Необходимый снимаемый параметр2",
+            "access": 0,
+            "dtype": 0
+        },
+        "10": {
+            "meaning": " ",
+            "units": "",
+            "address": 910,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС2) Необходимый снимаемый параметр3",
+            "access": 0,
+            "dtype": 0
+        },
+        "11": {
+            "meaning": " ",
+            "units": "",
+            "address": 911,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС2) Необходимый управляемый параметр1",
+            "access": 2,
+            "dtype": 0
+        },
+        "12": {
+            "meaning": " ",
+            "units": "",
+            "address": 912,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС2) Необходимый управляемый параметр2",
+            "access": 2,
+            "dtype": 0
+        },
+        "13": {
+            "meaning": " ",
+            "units": "",
+            "address": 913,
+            "multy": 1,
+            "digits": 0,
+            "description": "(ДС2) Необходимый управляемый параметр3",
+            "access": 2,
+            "dtype": 0
+        }
+    },
+    "Аттенюаторы": {
+        "0": {
+            "meaning": "at1Status",
+            "units": "",
+            "address": 1000,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Состояние устройства",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": " ",
+            "units": "",
+            "address": 1001,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый снимаемый параметр1",
+            "access": 0,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": " ",
+            "units": "",
+            "address": 1002,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый снимаемый параметр2",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": " ",
+            "units": "",
+            "address": 1003,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый снимаемый параметр3",
+            "access": 0,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": " ",
+            "units": "",
+            "address": 1004,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый управляемый параметр1",
+            "access": 2,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": " ",
+            "units": "",
+            "address": 1005,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый управляемый параметр2",
+            "access": 2,
+            "dtype": 0
+        },
+        "6": {
+            "meaning": " ",
+            "units": "",
+            "address": 1006,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый управляемый параметр3",
+            "access": 2,
+            "dtype": 0
+        },
+        "7": {
+            "meaning": "at2Status",
+            "units": "",
+            "address": 1007,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Состояние устройства",
+            "access": 0,
+            "dtype": 0
+        },
+        "8": {
+            "meaning": " ",
+            "units": "",
+            "address": 1008,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый снимаемый параметр1",
+            "access": 0,
+            "dtype": 0
+        },
+        "9": {
+            "meaning": " ",
+            "units": "",
+            "address": 1009,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый снимаемый параметр2",
+            "access": 0,
+            "dtype": 0
+        },
+        "10": {
+            "meaning": " ",
+            "units": "",
+            "address": 1010,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый снимаемый параметр3",
+            "access": 0,
+            "dtype": 0
+        },
+        "11": {
+            "meaning": " ",
+            "units": "",
+            "address": 1011,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый управляемый параметр1",
+            "access": 2,
+            "dtype": 0
+        },
+        "12": {
+            "meaning": " ",
+            "units": "",
+            "address": 1012,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый управляемый параметр2",
+            "access": 2,
+            "dtype": 0
+        },
+        "13": {
+            "meaning": " ",
+            "units": "",
+            "address": 1013,
+            "multy": 1,
+            "digits": 0,
+            "description": "(А1) Необходимый управляемый параметр3",
+            "access": 2,
+            "dtype": 0
+        }
+    },
+    "Прочее": {
+        "0": {
+            "meaning": " ",
+            "units": "",
+            "address": 1500,
+            "multy": 1,
+            "digits": 0,
+            "description": "Термодатчик балласта",
+            "access": 0,
+            "dtype": 0
+        },
+        "1": {
+            "meaning": " ",
+            "units": "",
+            "address": 1501,
+            "multy": 1,
+            "digits": 0,
+            "description": "Необходимый снимаемый параметр2",
+            "access": 0,
+            "dtype": 0
+        },
+        "2": {
+            "meaning": " ",
+            "units": "",
+            "address": 1502,
+            "multy": 1,
+            "digits": 0,
+            "description": "Необходимый снимаемый параметр3",
+            "access": 0,
+            "dtype": 0
+        },
+        "3": {
+            "meaning": " ",
+            "units": "",
+            "address": 1503,
+            "multy": 1,
+            "digits": 0,
+            "description": "Необходимый управляемый параметр1",
+            "access": 2,
+            "dtype": 0
+        },
+        "4": {
+            "meaning": " ",
+            "units": "",
+            "address": 1504,
+            "multy": 1,
+            "digits": 0,
+            "description": "Необходимый управляемый параметр2",
+            "access": 2,
+            "dtype": 0
+        },
+        "5": {
+            "meaning": " ",
+            "units": "",
+            "address": 1505,
+            "multy": 1,
+            "digits": 0,
+            "description": "Необходимый управляемый параметр3",
+            "access": 2,
+            "dtype": 0
+        }
+    }
+}
