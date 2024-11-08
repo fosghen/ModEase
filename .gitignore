@@ -12,7 +12,7 @@ Makefile.*
 *.so
 *.a
 *.lib
-bulid/
+build/
 
 # Qt Creator specific
 .idea/
