@@ -1,0 +1,28 @@
+# Qt generated files
+*.user
+*.pro.user
+.qmake.stash
+*.autosave
+Makefile
+Makefile.*
+*.o
+*.obj
+*.dll
+*.exe
+*.so
+*.a
+*.lib
+
+# Qt Creator specific
+.idea/
+*.pro.user*
+*.qbs.user
+.vs/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+*.dir/
+
