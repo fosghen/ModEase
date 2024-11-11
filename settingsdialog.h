@@ -24,12 +24,11 @@ class SettingsDialog : public QDialog
 
 public:
     struct Settings {
-#if QT_CONFIG(modbus_serialport)
+        QString portName = "";
         int parity = QSerialPort::NoParity;
         int baud = QSerialPort::Baud115200;
         int dataBits = QSerialPort::Data8;
         int stopBits = QSerialPort::OneStop;
-#endif
     };
 
     explicit SettingsDialog(QWidget *parent = nullptr);
