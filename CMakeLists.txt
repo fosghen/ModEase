@@ -32,6 +32,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         registers.json
         resources.qrc
         style.qss
+        connectionmanager.h connectionmanager.cpp
+        registermanager.h registermanager.cpp
+        tablemanager.h tablemanager.cpp
 
 
     )
