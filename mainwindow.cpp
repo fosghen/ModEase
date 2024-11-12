@@ -8,6 +8,7 @@
 #include <QFile>
 #include <QSerialPortInfo>
 #include <QModbusDevice>
+#include <QFileDialog>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -22,7 +23,8 @@ MainWindow::MainWindow(QWidget *parent) :
     customizeWindow();
     initActions();
     defineComPorts();
-    m_tableManager->readInitialize(ui->tabWidget, ui->multyBox);
+    openFileDialog();
+    m_tableManager->readInitialize(ui->tabWidget, ui->multyBox, registerPath);
     m_registerManager->registersInit(m_tableManager);
 }
 
@@ -50,6 +52,11 @@ void MainWindow::initActions() {
     connect(m_registerManager, &RegisterManager::clearStatusBar, this, &MainWindow::clearStatusBar);
     connect(m_registerManager, &RegisterManager::writeError, this, &MainWindow::displayConnectionError);
     connect(m_registerManager, &RegisterManager::isFinished, this, &MainWindow::finishGetData);
+}
+
+
+void MainWindow::openFileDialog() {
+    registerPath = QFileDialog::getOpenFileName(this, tr("Выберите файл"), "", tr("All Files (*);;Text Files (*.txt)"));
 }
 
 void MainWindow::sendData()
