@@ -14,7 +14,7 @@ class TableManager : public QObject {
 public:
     explicit TableManager(QObject *parent = nullptr);
 
-    void readInitialize(QTabWidget* tabWidget_, QCheckBox *multyBox);
+    void readInitialize(QTabWidget* tabWidget_, QCheckBox *multyBox, QString registerPath);
     void clearTable();
     void updateTable();
 

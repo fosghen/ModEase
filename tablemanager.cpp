@@ -11,13 +11,12 @@ TableManager::TableManager(QObject *parent)
     : QObject{parent}
 {}
 
-void TableManager::readInitialize(QTabWidget *tabWidget_, QCheckBox *multyBox)
+void TableManager::readInitialize(QTabWidget *tabWidget_, QCheckBox *multyBox, QString registerPath)
 {
     m_tabWidget = tabWidget_;
     m_multyBox = multyBox;
-    QString filePath = "registers_.json";
 
-    readJsonData(filePath);
+    readJsonData(registerPath);
     pasteJsonData();
 }
 
