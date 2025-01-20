@@ -1,6 +1,7 @@
 #include "registermanager.h"
 
 #include "tablemanager.h"
+#include <QThread>
 
 int current_register;
 
@@ -11,6 +12,8 @@ RegisterManager::RegisterManager(QObject *parent)
 void RegisterManager::registersInit(TableManager* m_tableManager)
 {
     registers = &m_tableManager->registers;
+    numRegisterRead = &m_tableManager->numRegisterRead;
+    startRegAddress = &m_tableManager->startRegAddress;
     regAddress = &m_tableManager->regAddress;
 }
 
@@ -61,14 +64,16 @@ void RegisterManager::readRegisters(int slaveAddress, QModbusRtuSerialClient *mo
     current_register = 0;
     int a = 0;
     for (int i = 0; i < (*regAddress).size(); i++){
-        if ((*registers)[(*regAddress)[i]].Access == 1) continue;
+
+        if (!(*registers)[(*regAddress)[i]].isRead) continue;
+        qDebug() << (*registers)[(*regAddress)[i]].Address;
         QModbusDataUnit readRequest = QModbusDataUnit(QModbusDataUnit::HoldingRegisters,
                                                       (*regAddress)[i],
                                                       1);
         if (auto *reply = modbusDevice->sendReadRequest(readRequest, slaveAddress)) {
+            qDebug() << slaveAddress << "slaveAddress";
             if (!reply->isFinished()){
                 connect(reply, &QModbusReply::finished, this, &RegisterManager::onReadReady);
-                qDebug() << a;
                 a++;
             }
             else
@@ -87,9 +92,9 @@ void RegisterManager::onReadReady()
 
     if (reply->error() == QModbusDevice::NoError) {
         const QModbusDataUnit unit = reply->result();
-        qDebug() <<unit.value(0);
-        if ((*registers)[(*regAddress)[current_register]].Access == 1) current_register ++;
-        (*registers)[(*regAddress)[current_register]].Value = unit.value(0);
+        qDebug() <<current_register << "Reply";
+        // if ((*registers)[(*regAddress)[current_register]].Access == 1) current_register ++;
+        (*registers)[(*regAddress)[*startRegAddress + current_register]].Value = unit.value(0);
         current_register++;
 
     } else if (reply->error() == QModbusDevice::ProtocolError) {
@@ -104,9 +109,11 @@ void RegisterManager::onReadReady()
 
     reply->deleteLater();
 
-    if (current_register == (*regAddress).size()){
+    qDebug() << *startRegAddress << "," << *numRegisterRead;
+    if (current_register == *numRegisterRead){
         emit isFinished();
     }
+    QThread::msleep(10);
 }
 
 

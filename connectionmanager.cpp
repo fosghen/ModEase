@@ -25,8 +25,8 @@ bool ConnectionManager::connectDevice(SettingsDialog::Settings settings) {
         m_modbusDevice ->setConnectionParameter(QModbusDevice::SerialStopBitsParameter,
                                              settings.stopBits);
 
-        m_modbusDevice ->setTimeout(1000);
-        m_modbusDevice ->setNumberOfRetries(3);
+        m_modbusDevice ->setTimeout(500);
+        m_modbusDevice ->setNumberOfRetries(5);
         if (!m_modbusDevice ->connectDevice()) {
             emit connectionFailed(tr("Подключение не выполнено: %1").arg(m_modbusDevice ->errorString()));
             return false;

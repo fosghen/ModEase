@@ -25,7 +25,8 @@ private:
     QModbusRtuSerialClient *modbusDevice;
     QMap<int, TableManager::Register>* registers;
     QVector<int>* regAddress;
-
+    int* numRegisterRead;
+    int* startRegAddress;
 };
 
 #endif // REGISTERMANAGER_H

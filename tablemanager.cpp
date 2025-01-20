@@ -115,6 +115,7 @@ QTableWidget* TableManager::configTab(QString tab, QWidget* newTab, QJsonObject 
     // Чтобы подключить шорткат для Enter надо создать лямбду функцию
     connect(shortcut, &QShortcut::activated, this, [this, newTable]() {onEnterClicked(newTable);});
     connect(m_tabWidget, &QTabWidget::currentChanged, this, &TableManager::clearTable);
+    connect(m_tabWidget, &QTabWidget::currentChanged, this, &TableManager::chooseAllRegInTab);
 
     return newTable;
 }
@@ -136,7 +137,7 @@ int TableManager::configTable(QJsonObject regInfo, QTableWidget* table, int row)
 
     int access = regInfo.value("access").toInt();
     QTableWidgetItem *value = new QTableWidgetItem(regInfo.value("").toString());
-    if (access == 0) configItem(value);
+    if (access == 1) configItem(value);
 
     registersTalbeItem[address_] = *value;
     table->setItem(row, 0, meaning);
@@ -175,6 +176,7 @@ void TableManager::pasteJsonData()
         int row = 0;
         for (int reg : keys)
         {
+
             struct Register register_;
             QJsonObject regInfo = regObject.value(QString::number(reg)).toObject();
             int address = configTable(regInfo, newTable, row);
@@ -188,6 +190,7 @@ void TableManager::pasteJsonData()
             register_.Digits = digits;
             register_.Multy = multy;
             register_.isWrite = false;
+            register_.isRead = false;
 
             registers[address] = register_;
             regAddress.append(address);
@@ -215,6 +218,36 @@ void TableManager::clearTable()
             registers[address].isWrite = false;
         }
     }
+}
+
+void TableManager::chooseAllRegInTab(int index)
+{
+    int pageCount = m_tabWidget->count();
+
+    for (int i = 0; i < pageCount; i++){
+        QWidget *tab = m_tabWidget->widget(i);
+        QVBoxLayout *layout = qobject_cast<QVBoxLayout*>(tab->layout());
+        QTableWidget *tableWidget = qobject_cast<QTableWidget*>(layout->itemAt(0)->widget());
+        for (int row = 0; row < tableWidget->rowCount(); row++){
+            QTableWidgetItem *item = tableWidget->item(row, 3);
+            int address = item->text().toInt();
+            registers[address].isRead = false;
+            numRegisterRead = 0;
+        }
+    }
+    startRegAddress = 0;
+
+    QWidget *tab = m_tabWidget->widget(index);
+    QVBoxLayout *layout = qobject_cast<QVBoxLayout*>(tab->layout());
+    QTableWidget *tableWidget = qobject_cast<QTableWidget*>(layout->itemAt(0)->widget());
+    for (int row = 0; row < tableWidget->rowCount(); row++){
+        QTableWidgetItem *item = tableWidget->item(row, 3);
+        int address = item->text().toInt();
+        registers[address].isRead = true;
+        numRegisterRead++;
+    }
+    startRegAddress = index * 50;
+    qDebug() << startRegAddress;
 }
 
 void TableManager::updateTable()

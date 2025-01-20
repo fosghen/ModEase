@@ -15,6 +15,7 @@ public:
     explicit TableManager(QObject *parent = nullptr);
 
     void readInitialize(QTabWidget* tabWidget_, QCheckBox *multyBox, QString registerPath);
+    void chooseAllRegInTab(int index);
     void clearTable();
     void updateTable();
 
@@ -26,9 +27,12 @@ public:
         int Digits;
         float Multy;
         bool isWrite;
+        bool isRead;
     };
 
     QMap<int, Register> registers;
+    int numRegisterRead;
+    int startRegAddress;
     QMap<int, QTableWidgetItem> registersTalbeItem;
     QVector<int> regAddress;
 
