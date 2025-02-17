@@ -183,6 +183,7 @@ void TableManager::pasteJsonData()
             float multy = regInfo.value("multy").toDouble();
             int digits = regInfo.value("digits").toInt();
             int access = regInfo.value("access").toInt();
+            int dtype = regInfo.value("dtype").toInt();
 
             register_.Address = address;
             register_.Value = 0;
@@ -191,6 +192,7 @@ void TableManager::pasteJsonData()
             register_.Multy = multy;
             register_.isWrite = false;
             register_.isRead = false;
+            register_.dtype = dtype;
 
             registers[address] = register_;
             regAddress.append(address);
@@ -253,7 +255,14 @@ void TableManager::chooseAllRegInTab(int index)
 void TableManager::updateTable()
 {
     for (int i = 0; i < regAddress.size(); i++){
-        float value = registers[regAddress[i]].Value;
+        float value;
+        if (registers[regAddress[i]].dtype == ToUint16){
+            value = static_cast<uint16_t>(registers[regAddress[i]].Value);
+        }
+
+        if (registers[regAddress[i]].dtype == ToInt16){
+            value = static_cast<int16_t>(registers[regAddress[i]].Value);
+        }
         value *= registers[regAddress[i]].Multy;
 
         registersTalbeItem[regAddress[i]].setText(QString::number(value, 'f', registers[regAddress[i]].Digits));

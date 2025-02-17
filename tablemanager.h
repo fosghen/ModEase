@@ -28,7 +28,14 @@ public:
         float Multy;
         bool isWrite;
         bool isRead;
+        int dtype;
     };
+
+    enum ConversionType {
+        ToUint16 = 0,
+        ToInt16  = 1
+    };
+    Q_ENUM(ConversionType)
 
     QMap<int, Register> registers;
     int numRegisterRead;
